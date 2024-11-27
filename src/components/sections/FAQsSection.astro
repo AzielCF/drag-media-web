@@ -1,0 +1,54 @@
+---
+import Section from "../ui/elements/Section.astro";
+
+const faqs = [
+  {
+    question: "¿Es gratis obtener una API key?",
+    answer:
+      "Sí, la obtención de cualquier API key disponible es completamente gratuita.",
+  },
+  {
+    question: "¿Mi privacidad esta a salvo si uso Drag media?",
+    answer:
+      "¡Claro! Drag Media no recopila datos. Descargue siempre desde nuestra web o GitHub oficial por su seguridad.",
+  },
+  {
+    question: "¿Las descargas son ilimitadas?",
+    answer:
+      "Las descargas dependen del límite proporcionado por la plataforma seleccionada de medios segun lo que ofrece.",
+  },
+  {
+    question: "¿Este programa pertenece a alguna empresa?",
+    answer:
+      "No, Drag media es un proyecto independiente y personal no afiliado a ninguna empresa actualmente.",
+  },
+  {
+    question: "¿Puedo ajustar la calidad de las descargas?",
+    answer:
+      "Sí, puedes ajustar la calidad de las descargas y otras opciones según tus preferencias.",
+  },
+  {
+    question: "¿Por qué Drag media no está disponible para Mac?",
+    answer:
+      "No tengo Mac, pero si deseas puedes compilar el proyecto tu mismo, clona el repositorio GitHub y prueba.",
+  },
+];
+---
+
+<!-- FAQs Section -->
+<Section nameSection="FAQs" BgAcent={false}>
+    <h2 class="text-3xl font-bold mb-8 text-gray-200">Preguntas Frecuentes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        faqs.map((faq) => (
+          <div class="flex flex-col p-6 bg-[#333] rounded-lg justify-center">
+            <button class="text-xl font-bold mb-2 text-[#00bd7e] hover:underline focus:outline-none">
+              {faq.question}
+            </button>
+            <p class="text-gray-300">{faq.answer}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</Section>

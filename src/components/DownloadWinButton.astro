@@ -1,0 +1,15 @@
+---
+import { getLinkLastedDownload } from "../modules/ReleaseLastedDownload";
+import Button from "./ui/elements/Button.astro";
+import { GIT_REPOSITORY_OWNER, GIT_REPOSITORY_REPO } from "../consts";
+
+let link: string | null; 
+try { 
+    link = await getLinkLastedDownload(GIT_REPOSITORY_OWNER, GIT_REPOSITORY_REPO); 
+} 
+catch (error) { 
+    console.error("Error al obtener el enlace de descarga:", error); link = "#"; // Asigna un enlace alternativo o maneja el error de alguna manera 
+    }
+---
+
+<Button title="Descargar para Windows" href={link} rel="nofollow"/>

@@ -1,0 +1,31 @@
+---
+import Section from "../ui/elements/Section.astro";
+---
+<!-- Features Section -->
+<Section nameSection="features" BgAcent={false}>
+    <h2 class="text-3xl font-bold mb-8 text-gray-200">Características</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="p-6 bg-[#333] rounded-lg">
+        <h3 class="text-xl font-bold mb-2 text-gray-200">Gestion de Apis</h3>
+        <p class="text-gray-300">
+          Agrega tus claves API, personaliza y maximiza la descarga de tus medios.
+        </p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="p-6 bg-[#333] rounded-lg">
+        <h3 class="text-xl font-bold mb-2 text-gray-200">Guardado de medios</h3>
+        <p class="text-gray-300">
+          Guarda tus descargas en el directorio de tu elección o dejalo por defecto.
+        </p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="p-6 bg-[#333] rounded-lg">
+        <h3 class="text-xl font-bold mb-2 text-gray-200">Arrastrar y soltar</h3>
+        <p class="text-gray-300">
+          Arrastra tus medios descargados a cualquier programa con facilidad.
+        </p>
+      </div>
+    </div>
+  </div>
+</Section>

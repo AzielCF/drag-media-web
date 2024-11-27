@@ -1,0 +1,15 @@
+---
+interface Props {
+    BgAcent: Boolean,
+    nameSection: string
+}
+
+const { BgAcent, nameSection } = Astro.props;
+const bgColor = BgAcent === true ? "#272727" : "#1d1d1d";
+---
+
+<section id={nameSection} class={`bg-[${bgColor}] py-16 px-8`}>
+    <div class="container mx-auto text-center max-w-screen-xl">
+        <slot/>
+    </div>
+</section>

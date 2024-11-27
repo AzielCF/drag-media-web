@@ -1,0 +1,32 @@
+---
+// Component Imports
+import BaseHead from "../components/BaseHead.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
+import FeaturesSection from "../components/sections/FeaturesSection.astro";
+import VideoTurorialSection from "../components/sections/VideoTurorialSection.astro";
+import FAQsSection from "../components/sections/FAQsSection.astro";
+import DownloadsSection from "../components/sections/DownloadsSection.astro";
+
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+
+  <body class="bg-[#1d1d1d] text-gray-200 font-sans">
+    <Navbar />
+    <Hero />
+    <FeaturesSection />
+    <VideoTurorialSection />
+    <FAQsSection />
+    <DownloadsSection />
+
+    <Footer />
+  </body>
+</html>

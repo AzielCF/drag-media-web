@@ -1,0 +1,23 @@
+---
+import DownloadWinButton from "../DownloadWinButton.astro";
+import Section from "../ui/elements/Section.astro";
+import { GIT_REPOSITORY_LINK } from "../../consts";
+
+const versions = GIT_REPOSITORY_LINK + "/tags"
+---
+
+<!-- Downloads Section -->
+<Section nameSection="download" BgAcent={true}>
+    <h2 class="text-3xl font-bold mb-3 text-gray-200">
+      Drag Media es gratis
+    </h2>
+    <p class="text-lg text-gray-300 mb-7">
+      Descarga la última versión de Drag Media para empezar a disfrutar de
+      todas las funciones.
+    </p>
+    <DownloadWinButton/>
+    <a href={versions} class="text-gray-300 hover:underline block mt-4"
+      >Ver versiones anteriores</a
+    >
+  </div>
+</Section>

@@ -1,0 +1,12 @@
+---
+import type { HTMLAttributes } from 'astro/types';
+type Props = HTMLAttributes<'a'>;
+
+const { href="#", title="Button", ...Props } = Astro.props;
+---
+
+<a
+  href={href}
+  class="bg-[#00bd7e] hover:bg-[#008658] text-white font-bold py-3 px-6 rounded-full"
+  >{ title }</a
+>
