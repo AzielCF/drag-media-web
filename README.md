@@ -1,15 +1,27 @@
-# Astro with Tailwind
+# Drag Media 🎥✨
 
-```sh
-npm create astro@latest -- --template with-tailwindcss
-```
+**Drag Media** es una aplicación de escritorio diseñada para facilitar la descarga de contenido multimedia de páginas de stock a través de sus respectivas APIs. Este repositorio contiene el código de la landing page para la aplicación, desarrollada con **Astro** y **Tailwind CSS**.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+---
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+## 🌟 Características
 
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
-# drag-media-web
-# drag-media-web
+- 📱 **Landing moderna y responsiva**: Creada con Tailwind CSS para un diseño atractivo y adaptable a cualquier dispositivo.
+- 🚀 **Framework Astro**: Optimización del rendimiento y generación de sitios estáticos.
+- 🎯 **Foco en conversión**: Presenta las principales características de la aplicación con llamadas a la acción claras.
+
+---
+
+## 🛠 Tecnologías
+
+- 🪐 **Astro**: Framework para la construcción de sitios estáticos y rápidos.
+- 🎨 **Tailwind CSS**: Framework de utilidades para estilos rápidos y personalizados.
+- 🌐 **API Multimedia**: Integración de las APIs de las principales páginas de stock para la descarga de recursos.
+
+---
+
+## 💻 Demo en vivo
+
+¿Quieres verlo en acción? Visita nuestra [Demo en vivo](https://drag-media-web.vercel.app/).
+
+---
