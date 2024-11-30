@@ -1,5 +1,6 @@
 ---
 // Component Imports
+import SpeedInsights from "@vercel/speed-insights/astro"
 import BaseHead from "../components/BaseHead.astro";
 import Navbar from "../components/Navbar.astro";
 import Hero from "../components/Hero.astro";
@@ -26,7 +27,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
     <VideoTurorialSection />
     <FAQsSection />
     <DownloadsSection />
-
     <Footer />
+    <SpeedInsights />
   </body>
 </html>
