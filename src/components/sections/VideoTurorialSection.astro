@@ -1,14 +1,21 @@
 ---
 import Section from "../ui/elements/Section.astro";
+import { VIDEO_DEMO_LINK } from "../../consts";
+
+import CameraIcon from "../ui/icons/Camera.astro";
 ---
 
 <!-- Video Tutorial Section -->
 <Section nameSection="video" BgAcent={true}>
-    <h2 class="text-3xl font-bold mb-8 text-gray-200">Video Tutorial</h2>
+    <h2 class="text-3xl font-bold mb-8 mr-5 text-gray-200 flex flex-wrap items-end justify-center"><CameraIcon/>Video Demo</h2>
     <figure class="bg-[#333] p-4 rounded-lg">
       <!-- Inserta aquí el código del reproductor de video o el enlace al video tutorial -->
       <figcaption class="text-gray-300">
-        Inserta aquí el reproductor de video o el enlace al video tutorial
+        
+        <video class="w-full h-auto max-w-full rounded-2xl dark:border-gray-700" controls>
+          <source src={VIDEO_DEMO_LINK}>
+          Your browser does not support the video tag.
+        </video>
       </figcaption>
     </figure>
   </div>
