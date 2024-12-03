@@ -10,14 +10,14 @@ import VideoTurorialSection from "../components/sections/VideoTurorialSection.as
 import FAQsSection from "../components/sections/FAQsSection.astro";
 import DownloadsSection from "../components/sections/DownloadsSection.astro";
 
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_OG_NAME, SITE_OG_DESCRIPTION } from "../consts";
 
 ---
 
 <!doctype html>
 <html lang="es">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION}, ogName={SITE_OG_NAME}, ogDescription={SITE_OG_DESCRIPTION} />
   </head>
 
   <body class="bg-[#1d1d1d] text-gray-200 font-sans">
