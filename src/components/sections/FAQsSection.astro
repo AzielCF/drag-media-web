@@ -1,5 +1,6 @@
 ---
 import Section from "../ui/elements/Section.astro";
+import QuestionIcon from "../ui/icons/Question.astro";
 
 const faqs = [
   {
@@ -37,7 +38,7 @@ const faqs = [
 
 <!-- FAQs Section -->
 <Section nameSection="FAQs" BgAcent={false}>
-    <h2 class="text-3xl font-bold mb-8 text-gray-200">Preguntas Frecuentes</h2>
+    <h2 class="text-3xl font-bold mb-8 text-gray-200 flex flex-wrap items-end justify-center"><QuestionIcon/>Preguntas Frecuentes</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {
         faqs.map((faq) => (
