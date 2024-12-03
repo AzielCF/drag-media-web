@@ -6,9 +6,11 @@ interface Props {
 	title: string;
 	description: string;
 	image?: string;
+	ogName: string;
+	ogDescription: string
 }
 
-const { title, description } = Astro.props;
+const { title, description, ogName, ogDescription } = Astro.props;
 ---
 
 <!-- Global Metadata -->
@@ -21,3 +23,7 @@ const { title, description } = Astro.props;
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta property="og:site_name" content={ogName}>
+<meta property="og:title" content={title}>
+<meta property="og:description" content={ogDescription}>
+<meta property="og:url" content="https://drag-media.vercel.app/">
