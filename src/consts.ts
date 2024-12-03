@@ -6,3 +6,4 @@ export const GIT_OWNER_LINK = "https://github.com/AzielCF";
 export const GIT_REPOSITORY_LINK = GIT_OWNER_LINK + "/Drag-media";
 export const GIT_REPOSITORY_OWNER = "AzielCF";
 export const GIT_REPOSITORY_REPO = "Drag-media";
+export const VIDEO_DEMO_LINK = "https://res.cloudinary.com/dktwu41vm/video/upload/f_auto:video,q_auto/v1/drag-media/lmbodhaj3ztka9gnmt4g";
