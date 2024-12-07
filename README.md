@@ -22,6 +22,6 @@
 
 ## 💻 Demo en vivo
 
-¿Quieres verlo en acción? Visita nuestra [Demo en vivo](https://drag-media-web.vercel.app/).
+¿Quieres verlo en acción? Visita nuestra [Demo en vivo](https://drag-media.vercel.app/).
 
 ---
